@@ -4,7 +4,4 @@ public interface ToppingInterface {
     public String getName();
     public double getPrice();
 
-    void addTopping();
-
-    void removeTopping();
 }

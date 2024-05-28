@@ -1,7 +1,16 @@
 package com.pluralsight.sandwichshop.items.toppings;
 
-public class PremiumCheese extends PremiumTopping{
-    public PremiumCheese(String name, double price) {
-        super(name, price);
+import java.util.List;
+
+public class PremiumCheese extends PremiumTopping {
+
+    @Override
+    public String getName() {
+        return "";
+    }
+
+    @Override
+    public double getPrice() {
+        return 0;
     }
 }

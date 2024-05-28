@@ -1,10 +1,10 @@
 package com.pluralsight.sandwichshop.items.toppings;
 
-public abstract class AbstractTopping implements ToppingInterface {
+public class RegularTopping implements ToppingInterface {
     private String name;
     private double price;
 
-    public AbstractTopping(String name, double price) {
+    public RegularTopping(String name, double price) {
         this.name = name;
         this.price = price;
     }
