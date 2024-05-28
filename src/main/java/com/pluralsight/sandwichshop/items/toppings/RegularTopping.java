@@ -19,5 +19,6 @@ public class RegularTopping implements ToppingInterface {
         return price;
     }
 
+    //make static helper method that returns all available options
 
 }
