@@ -32,51 +32,10 @@ public class UserInterface {
         }
     } //need if statement - 1. create new order
 
-    public void createSandwichDisplay() {
-        System.out.println("Take it step by step!");
-        System.out.println("。。。。。。。。。。。。。。。");
-        System.out.println("First, pick your bread.");
-        //print out list of breads
-        System.out.println("Next add regular toppings.");
-        //print out meat options, scanner
-        //print out cheese options, scanner
-        System.out.println("Would you like premium toppings?");
-        //print out premium options, scanner
-        System.out.println("Next step, add vegetables.");
-        //print out vegetables, can have multiple answers, scanner
-        System.out.println("What condiments would you like?");
-        //print out options, scanner
-        System.out.println("Add drink to order.");
-        //print out options, scanner
-        System.out.println("Add chips to order.");
-        //print out options, scanner
-
-
-
-
-    }
-
-
-    /*
-    want to add:
-    -create sandwich
-    -add ingredients to sandwich
-    -remove ingredients from sandwich
-    -add sandwich
-    -remove sandwich
-    -add chips
-    remove chips
-    -add drink
-    -remove drink
-     */
-
-
     public void createNewOrder() {
         System.out.println("Please enter a name for your order.");
         myScanner.nextLine();
         String orderName = myScanner.nextLine();
-
-
     }
 
     public void escapeFromMenu() {
@@ -85,9 +44,109 @@ public class UserInterface {
     }
 
 
+    public void createSandwichMenu() {
+        System.out.println("Take it step by step!");
+        System.out.println("。。。。。。。。。。。。。。。");
+        String userInput = myScanner.nextLine();
 
-    public void createSandiwch() {
+        switch (userInput) {
+            case "1":
+                typeOfBreadRequest();
+                break;
+            case "2":
+                sizeOfSandwichRequest();
+                break;
+            case "3":
+                toastedRequest();
+                break;
+            case "4":
+                addRegularMeatToppingRequest();
+                break;
+            case "5":
+                addPremiumMeatToppingRequest();
+                break;
+            case "6":
+                addRegularCheeseToppingRequest();
+                break;
+            case "7":
+                addPremiumCheeseToppingRequest();
+                break;
+            case "8":
+                addVegetableToppingRequest(); //will need to be a loop so they can add multiple
+                break;
+            case "9":
+                addCondimentToppingRequest(); //will need to be a loop so they can add multiple
+                break;
+            default:
+                System.out.println("Invalid choice, please try again!");
+
+        }
 
     }
+
+    //would like a way to add multiple sandwiches to one order
+
+    public void typeOfBreadRequest() {
+
+    }
+
+    public void sizeOfSandwichRequest(){
+
+    }
+
+    public void toastedRequest() {
+
+    }
+
+    public void addRegularMeatToppingRequest() {
+
+    }
+
+    public void addPremiumMeatToppingRequest() {
+
+    }
+
+    public void addRegularCheeseToppingRequest() {
+
+    }
+
+    public void addPremiumCheeseToppingRequest() {
+
+    }
+
+    public void addVegetableToppingRequest() {
+
+    }
+
+    public void addCondimentToppingRequest() {
+
+    }
+
+    public void addThingsToOrder() {
+        System.out.println("You can add a drink and chips if you want to!");
+        System.out.println("。。。。。。。。。。。。。。。。。。。。。。。。。。。。。");
+        String extraStuffInput = myScanner.nextLine();
+
+        switch(extraStuffInput) {
+            case "1":
+                addDrinkRequest();
+                break;
+            case "2":
+                addChipsRequest();
+                break;
+            default:
+                System.out.println("Invalid choice, please try again!");
+        }
+
+    }
+
+    public void addDrinkRequest() {
+
+    }
+
+    public void addChipsRequest() {
+        
+    }
+
 
 }
