@@ -5,4 +5,6 @@ public interface ToppingInterface {
     public double getPrice();
 
     void addTopping();
+
+    void removeTopping();
 }

@@ -8,6 +8,11 @@ public class PremiumTopping extends AbstractTopping {
 
     @Override
     public void addTopping() {
-        System.out.println("Extra " + getName() + " added to sandwich.");
+        System.out.println("Extra " + getName() + " added to sammie.");
+    }
+
+    @Override
+    public void removeTopping() {
+        System.out.println("Extra " + getName() + " removed from sammie.");
     }
 }
