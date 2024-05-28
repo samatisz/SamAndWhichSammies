@@ -3,7 +3,7 @@ package com.pluralsight.sandwichshop;
 import java.util.Scanner;
 
 public class UserInterface {
-    public Scanner myScanner = new Scanner(System.in);
+    public Scanner myScanner;
     public Order order;
 
     public UserInterface() {
@@ -30,11 +30,27 @@ public class UserInterface {
     }
 
     public void createNewOrder() {
+        System.out.println("Please enter a name for your order.");
+        myScanner.nextLine();
+        String orderName = myScanner.nextLine();
+
 
     }
 
     public void escapeFromMenu() {
-
+        System.out.println("Thank you for flying in!");
+        System.exit(0);
     }
+
+    /*
+    want to add:
+    -add sandwich
+    -remove sandwich
+    -add chips
+    remove chips
+    -add drink
+    -remove drink
+
+     */
 
 }
