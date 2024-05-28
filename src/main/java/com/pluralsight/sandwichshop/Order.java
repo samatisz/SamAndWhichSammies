@@ -70,7 +70,6 @@ public class Order {
 
     public void checkOut() {
         // send to receipt
-        ReceiptManager.generateReceipt(this);
     }
 
     public void cancelOrder() {
