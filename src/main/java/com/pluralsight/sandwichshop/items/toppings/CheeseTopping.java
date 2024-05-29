@@ -1,8 +1,7 @@
 package com.pluralsight.sandwichshop.items.toppings;
 
-import java.util.List;
-
-public class PremiumCheese extends PremiumTopping {
+public class CheeseTopping extends PremiumTopping {
+    //boolean needs to be added
 
     @Override
     public String getName() {

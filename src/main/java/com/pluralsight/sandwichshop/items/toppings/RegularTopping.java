@@ -4,9 +4,9 @@ public class RegularTopping implements ToppingInterface {
     private String name;
     private double price;
 
-    public RegularTopping(String name, double price) {
+    public RegularTopping(String name) {
         this.name = name;
-        this.price = price;
+        this.price = 0;
     }
 
     @Override

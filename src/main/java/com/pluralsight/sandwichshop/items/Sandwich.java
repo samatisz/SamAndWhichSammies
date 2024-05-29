@@ -3,17 +3,19 @@ import com.pluralsight.sandwichshop.items.toppings.ToppingInterface;
 
 import java.util.List;
 
+//toppings will be listed HERE
+
 public class Sandwich {
     private int size;
     private String breadType;
     private boolean isToasted;
-    private List<ToppingInterface> ingredients;
+    private List<ToppingInterface> toppingList;
 
-    public Sandwich(int size, String breadType, boolean isToasted, List<ToppingInterface> ingredients) {
+    public Sandwich(int size, String breadType, boolean isToasted, List<ToppingInterface> toppingList) {
         this.size = size;
         this.breadType = breadType;
         this.isToasted = isToasted;
-        this.ingredients = ingredients;
+        this.toppingList = toppingList;
     }
 
     public int getSize() {
@@ -26,6 +28,11 @@ public class Sandwich {
 
     public boolean isToasted() {
         return isToasted;
+    }
+
+    public void addTopping(ToppingInterface topping) {
+        toppingList.add(topping);
+
     }
 
     public double calculatePrice() {

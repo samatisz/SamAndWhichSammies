@@ -19,28 +19,73 @@ public class UserInterface {
         System.out.println("0. Exit");
 
         String userChoice = myScanner.nextLine();
-
-        switch (userChoice) {
-            case "1":
-                createNewOrder();
-                break;
-            case "0":
-                escapeFromMenu();
-                break;
-            default:
-                System.out.println("Invalid choice. Please try again.");
+        do {
+            switch (userChoice) {
+                case "1":
+                    createNewOrder();
+                    break;
+                case "0":
+                    escapeFromMenu();
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
         }
-    } //need if statement - 1. create new order
-
-    public void createNewOrder() {
-        System.out.println("Please enter a name for your order.");
-        myScanner.nextLine();
-        String orderName = myScanner.nextLine();
+        while (true);
     }
 
     public void escapeFromMenu() {
+        System.out.println("。。。。。。。。。。。。。。。");
         System.out.println("Thank you for flying in!");
+        System.out.println("。。。。。。。。。。。。。。。");
         System.exit(0);
+    }
+
+    public void createNewOrder() {
+        System.out.println("Order Screen.");
+        myScanner.nextLine();
+        String userOrder = myScanner.nextLine();
+
+        switch(userOrder) {
+            case "1":
+                addSandwichRequest();
+                break;
+            case "2":
+                addDrinkRequest();
+                break;
+            case "3":
+                addChipsRequest();
+                break;
+            case "4":
+                checkOutRequest();
+                break;
+            case "5":
+                cancelOrderRequest();
+                break;
+            default:
+                System.out.println("Invalid request, please try again!");
+        }
+
+    }
+
+    public void addSandwichRequest() {
+
+    }
+
+    public void addDrinkRequest() {
+
+    }
+
+    public void addChipsRequest() {
+
+    }
+
+    public void checkOutRequest() {
+
+    }
+
+    public void cancelOrderRequest() {
+
     }
 
 
@@ -121,32 +166,5 @@ public class UserInterface {
     public void addCondimentToppingRequest() {
 
     }
-
-    public void addThingsToOrder() {
-        System.out.println("You can add a drink and chips if you want to!");
-        System.out.println("。。。。。。。。。。。。。。。。。。。。。。。。。。。。。");
-        String extraStuffInput = myScanner.nextLine();
-
-        switch(extraStuffInput) {
-            case "1":
-                addDrinkRequest();
-                break;
-            case "2":
-                addChipsRequest();
-                break;
-            default:
-                System.out.println("Invalid choice, please try again!");
-        }
-
-    }
-
-    public void addDrinkRequest() {
-
-    }
-
-    public void addChipsRequest() {
-
-    }
-
 
 }

@@ -9,6 +9,8 @@ import java.util.List;
 
 public class Order {
 
+    //list items????
+    //like a shopping cart,,,,,,
     private List<Sandwich> sandwiches;
     private List<Drink> drinks;
     private List<Chips> chipsList;
