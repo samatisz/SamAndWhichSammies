@@ -1,6 +1,5 @@
 package com.pluralsight.sandwichshop;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class UserInterface {
@@ -77,7 +76,7 @@ public class UserInterface {
     }
 
     public void addSandwichRequest() {
-        //will need to make the createSandwich switch case work
+        //i need to make this work,,,,
     }
 
     public void addDrinkRequest() {
@@ -144,49 +143,56 @@ public class UserInterface {
                 break;
             default:
                 System.out.println("Invalid choice, please try again!");
-
         }
-
     }
-
     //would like a way to add multiple sandwiches to one order
 
     public void typeOfBreadRequest() {
-
-
+        System.out.println("Bread Choices: Italian, Honey Wheat, Oat, Wrap, Pumpernickel, Rye, Sourdough");
+        System.out.println("Please enter your choice.");
+        myScanner.nextLine();
     }
 
     public void sizeOfSandwichRequest(){
-        //(SMALL, MEDIUM, LARGE)
-
+        System.out.println("Size Choices: SMALL, MEDIUM, LARGE");
+        System.out.println("Please enter your choice.");
     }
 
     public void toastedRequest() {
-        //(YES or NO)
-
+        System.out.println("YES or NO");
+        System.out.println("Please enter your choice.");
     }
 
     public void addRegularProteinToppingRequest() {
-
+        System.out.println("Protein Choices: Turkey, Honey Ham, Hummus, Tofurky, Roast Beef, Tuna Salad, Chicken Salad, Salami, Bacon");
+        System.out.println("Please enter your choice.");
     }
 
     public void addPremiumProteinToppingRequest() {
-
+        System.out.println("Adding an extra protein will add to the cost of your sandwich.");
+        System.out.println("Options: Turkey, Honey Ham, Hummus, Tofurky, Roast Beef, Tuna Salad, Chicken Salad, Bacon");
+        System.out.println("Please enter your choice.");
     }
 
     public void addRegularCheeseToppingRequest() {
-
+        System.out.println("Cheese Choices: American, Cheddar, Swiss, Gouda, Provolone, Pepper Jack, Feta, Mozzarella");
+        System.out.println("Please enter your choice.");
     }
 
     public void addPremiumCheeseToppingRequest() {
-
+        System.out.println("Adding an extra cheese will add to the cost of your sandwich.");
+        System.out.println("Options: American, Cheddar, Swiss, Gouda, Provolone, Pepper Jack, Feta, Mozzarella");
+        System.out.println("Please enter your choice.");
     }
 
     public void addRegularToppingRequest() {
-
+        System.out.println("Topping Choices (choose as many as you like!): Lettuce, Kale, Tomato, Avocado, Onion, Jalapenoes, Pickles, Cucumber, Banana Peppers, Spinach");
+        System.out.println("Please enter your choice.");
     }
 
     public void addCondimentToppingRequest() {
+        System.out.println("Condiment Choices: Mayonnaise, Mustard, Ketchup, Ranch, BBQ Sauce, Honey, Buffalo Sauce, Chipotle Sauce");
+        System.out.println("Please enter your choice.");
 
     }
 
