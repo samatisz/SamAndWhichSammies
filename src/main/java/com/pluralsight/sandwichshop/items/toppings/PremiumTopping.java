@@ -1,19 +1,25 @@
 package com.pluralsight.sandwichshop.items.toppings;
 
-public abstract class PremiumTopping implements ToppingInterface{
+public abstract class PremiumTopping implements Topping {
+    private String name;
     private double price;
-    private int size;
-    private boolean premiumToppingAddOn;
+    private boolean isExtra;
 
-
-    @Override
-    public String getName() {
-        return "";
+    public PremiumTopping(String name, double price, boolean isExtra) {
+        this.name = name;
+        this.price = price;
+        this.isExtra = isExtra;
     }
 
     @Override
-    public double getPrice() {
-        return 0;
+    public String getName() {
+        return name;
+    }
+
+    public abstract double getPrice(int sandwichSize);
+
+    public boolean isExtra() {
+        return isExtra;
     }
 
 

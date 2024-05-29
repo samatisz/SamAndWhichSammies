@@ -3,7 +3,6 @@ package com.pluralsight.sandwichshop.items;
 public class Drink {
 
     private String flavor;
-    private double price;
     private int size;
 
     public Drink(String flavor, int size) {
@@ -18,10 +17,6 @@ public class Drink {
 
     public String getFlavor() {
         return flavor;
-    }
-
-    public double getPrice() { //idk if i need this one
-        return price;
     }
 
     public int getSize() {

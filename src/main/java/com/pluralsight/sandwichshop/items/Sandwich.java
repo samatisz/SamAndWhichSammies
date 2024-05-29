@@ -1,5 +1,5 @@
 package com.pluralsight.sandwichshop.items;
-import com.pluralsight.sandwichshop.items.toppings.ToppingInterface;
+import com.pluralsight.sandwichshop.items.toppings.Topping;
 
 import java.util.List;
 
@@ -9,9 +9,9 @@ public class Sandwich {
     private int size;
     private String breadType;
     private boolean isToasted;
-    private List<ToppingInterface> toppingList;
+    private List<Topping> toppingList;
 
-    public Sandwich(int size, String breadType, boolean isToasted, List<ToppingInterface> toppingList) {
+    public Sandwich(int size, String breadType, boolean isToasted, List<Topping> toppingList) {
         this.size = size;
         this.breadType = breadType;
         this.isToasted = isToasted;
@@ -30,7 +30,7 @@ public class Sandwich {
         return isToasted;
     }
 
-    public void addTopping(ToppingInterface topping) {
+    public void addTopping(Topping topping) {
         toppingList.add(topping);
 
     }
@@ -38,4 +38,6 @@ public class Sandwich {
     public double calculatePrice() {
         return 0;
     }
+
+    // maybe add a method to print the sandwich info
 }

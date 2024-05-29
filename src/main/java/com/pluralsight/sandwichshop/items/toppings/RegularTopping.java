@@ -1,6 +1,6 @@
 package com.pluralsight.sandwichshop.items.toppings;
 
-public class RegularTopping implements ToppingInterface {
+public class RegularTopping implements Topping {
     private String name;
     private double price;
 

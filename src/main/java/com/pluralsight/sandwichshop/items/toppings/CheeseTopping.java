@@ -1,15 +1,13 @@
 package com.pluralsight.sandwichshop.items.toppings;
 
 public class CheeseTopping extends PremiumTopping {
-    //boolean needs to be added
-
-    @Override
-    public String getName() {
-        return "";
+    public CheeseTopping(String name, double price, boolean isExtra) {
+        super(name, price, isExtra);
     }
-
     @Override
-    public double getPrice() {
-        return 0;
+    public double getPrice(int sandwichSize) {
+        // switch case to get the price of cheese based on the sandwich size if it is extra or no
     }
+}
+
 }
