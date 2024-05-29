@@ -77,15 +77,16 @@ public class UserInterface {
     }
 
     public void addSandwichRequest() {
-
-
+        //will need to make the createSandwich switch case work
     }
 
     public void addDrinkRequest() {
+        System.out.println("Drink options: Grape Faygo, Monkees Banana Nut Rocket Fizz soda, Lemonade, Diet Coke, Coke, Water");//add them
 
     }
 
     public void addChipsRequest() {
+        System.out.println("Chip options: Lays ruffles, Doritos, Chili Fritos, Funyuns"); //add options
 
     }
 
@@ -151,6 +152,7 @@ public class UserInterface {
     //would like a way to add multiple sandwiches to one order
 
     public void typeOfBreadRequest() {
+
 
     }
 
