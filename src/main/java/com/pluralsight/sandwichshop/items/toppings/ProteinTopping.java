@@ -1,6 +1,6 @@
 package com.pluralsight.sandwichshop.items.toppings;
 
-public class MeatTopping extends PremiumTopping {
+public class ProteinTopping extends PremiumTopping {
 
     @Override
     public String getName() {

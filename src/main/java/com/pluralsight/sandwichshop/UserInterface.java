@@ -1,5 +1,6 @@
 package com.pluralsight.sandwichshop;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class UserInterface {
@@ -11,15 +12,15 @@ public class UserInterface {
     }
 
     public void mainMenu() {
-        System.out.println("Welcome to Sam And Which Sammies!");
-        System.out.println("。。。。。。。。。。。。。。。。。。。。。");
-        System.out.println("Please select an option.");
-        System.out.println(" ");
-        System.out.println("1. New order");
-        System.out.println("0. Exit");
+        while (true) {
+            System.out.println("Welcome to Sam And Which Sammies!");
+            System.out.println("。。。。。。。。。。。。。。。。。。。。。");
+            System.out.println("Please select an option.");
+            System.out.println(" ");
+            System.out.println("1. New order");
+            System.out.println("0. Exit");
 
-        String userChoice = myScanner.nextLine();
-        do {
+            String userChoice = myScanner.nextLine();
             switch (userChoice) {
                 case "1":
                     createNewOrder();
@@ -31,7 +32,6 @@ public class UserInterface {
                     System.out.println("Invalid choice. Please try again.");
             }
         }
-        while (true);
     }
 
     public void escapeFromMenu() {
@@ -42,33 +42,42 @@ public class UserInterface {
     }
 
     public void createNewOrder() {
-        System.out.println("Order Screen.");
-        myScanner.nextLine();
+        while (true) {
+        System.out.println("Get started!");
+        System.out.println("。。。。。。。。");
+        System.out.println("1. Add Sandwich");
+        System.out.println("2. Add Drink");
+        System.out.println("3. Add Chips");
+        System.out.println("4. Check Out");
+        System.out.println("5. Cancel Order");
+        System.out.println();
+        System.out.println("Please enter your request: ");
+
         String userOrder = myScanner.nextLine();
-
-        switch(userOrder) {
-            case "1":
-                addSandwichRequest();
-                break;
-            case "2":
-                addDrinkRequest();
-                break;
-            case "3":
-                addChipsRequest();
-                break;
-            case "4":
-                checkOutRequest();
-                break;
-            case "5":
-                cancelOrderRequest();
-                break;
-            default:
-                System.out.println("Invalid request, please try again!");
+            switch (userOrder) {
+                case "1":
+                    addSandwichRequest();
+                    break;
+                case "2":
+                    addDrinkRequest();
+                    break;
+                case "3":
+                    addChipsRequest();
+                    break;
+                case "4":
+                    checkOutRequest();
+                    break;
+                case "5":
+                    cancelOrderRequest();
+                    break;
+                default:
+                    System.out.println("Invalid request, please try again!");
+            }
         }
-
     }
 
     public void addSandwichRequest() {
+
 
     }
 
@@ -91,7 +100,17 @@ public class UserInterface {
 
     public void createSandwichMenu() {
         System.out.println("Take it step by step!");
+        System.out.println("Please enter the number associated with each step.");
         System.out.println("。。。。。。。。。。。。。。。");
+        System.out.println("Step 1: Choose your bread");
+        System.out.println("Step 2: What size?");
+        System.out.println("Step 3: Would you like it toasted?");
+        System.out.println("Step 4: Add your protein option.");
+        System.out.println("Step 5: Would you like extra protein?");
+        System.out.println("Step 6: Add your cheese option.");
+        System.out.println("Step 7: Would you like extra cheese?");
+        System.out.println("Step 8: Add toppings.");
+        System.out.println("Step 9:Add condiments.");
         String userInput = myScanner.nextLine();
 
         switch (userInput) {
@@ -105,10 +124,10 @@ public class UserInterface {
                 toastedRequest();
                 break;
             case "4":
-                addRegularMeatToppingRequest();
+                addRegularProteinToppingRequest();
                 break;
             case "5":
-                addPremiumMeatToppingRequest();
+                addPremiumProteinToppingRequest();
                 break;
             case "6":
                 addRegularCheeseToppingRequest();
@@ -117,7 +136,7 @@ public class UserInterface {
                 addPremiumCheeseToppingRequest();
                 break;
             case "8":
-                addVegetableToppingRequest(); //will need to be a loop so they can add multiple
+                addRegularToppingRequest(); //will need to be a loop so they can add multiple
                 break;
             case "9":
                 addCondimentToppingRequest(); //will need to be a loop so they can add multiple
@@ -136,18 +155,20 @@ public class UserInterface {
     }
 
     public void sizeOfSandwichRequest(){
+        //(SMALL, MEDIUM, LARGE)
 
     }
 
     public void toastedRequest() {
+        //(YES or NO)
 
     }
 
-    public void addRegularMeatToppingRequest() {
+    public void addRegularProteinToppingRequest() {
 
     }
 
-    public void addPremiumMeatToppingRequest() {
+    public void addPremiumProteinToppingRequest() {
 
     }
 
@@ -159,7 +180,7 @@ public class UserInterface {
 
     }
 
-    public void addVegetableToppingRequest() {
+    public void addRegularToppingRequest() {
 
     }
 
