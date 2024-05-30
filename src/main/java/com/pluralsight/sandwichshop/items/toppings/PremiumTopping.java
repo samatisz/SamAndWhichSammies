@@ -2,12 +2,10 @@ package com.pluralsight.sandwichshop.items.toppings;
 
 public abstract class PremiumTopping implements Topping {
     private String name;
-    private double price;
     private boolean isExtra;
 
-    public PremiumTopping(String name, double price, boolean isExtra) {
+    public PremiumTopping(String name, boolean isExtra) {
         this.name = name;
-        this.price = price;
         this.isExtra = isExtra;
     }
 

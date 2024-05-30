@@ -3,6 +3,8 @@ package com.pluralsight.sandwichshop;
 import com.pluralsight.sandwichshop.items.Chips;
 import com.pluralsight.sandwichshop.items.Drink;
 import com.pluralsight.sandwichshop.items.Sandwich;
+import com.pluralsight.sandwichshop.items.toppings.ProteinTopping;
+import com.pluralsight.sandwichshop.items.toppings.Topping;
 
 import java.util.List;
 import java.util.Scanner;
@@ -97,6 +99,8 @@ public class UserInterface {
             System.out.print(" > ");
         sizeChoice = myScanner.nextLine();
 
+        Sandwich sandwich = new Sandwich(1, breadChoice);
+
         System.out.println("Step 3: Would you like it toasted?");
             System.out.println("YES or NO");
             System.out.println("Please enter your choice.");
@@ -107,7 +111,8 @@ public class UserInterface {
             System.out.println("Protein Choices: Turkey, Honey Ham, Hummus, Tofurky, Roast Beef, Tuna Salad, Chicken Salad, Salami, Bacon");
             System.out.println("Please enter your choice.");
             System.out.print(" > ");
-        proteinChoice = myScanner.nextLine();
+            proteinChoice = myScanner.nextLine();
+
 
         System.out.println("Step 5: Would you like extra protein?"); //needs loop for multiple entries
             System.out.println("Adding an extra protein will add to the cost of your sandwich.");
@@ -115,6 +120,10 @@ public class UserInterface {
             System.out.println("Please enter your choice.");
             System.out.print(" > ");
         extraProteinChoice = myScanner.nextLine();
+        boolean extraProteinChoiceBoolean = Boolean.parseBoolean(extraProteinChoice);
+
+        Topping proteinTopping = new ProteinTopping(proteinChoice,extraProteinChoiceBoolean);
+        sandwich.addTopping(proteinTopping);
 
         System.out.println("Step 6: Add your cheese option.");
             System.out.println("Cheese Choices: American, Cheddar, Swiss, Gouda, Provolone, Pepper Jack, Feta, Mozzarella");
@@ -145,7 +154,7 @@ public class UserInterface {
         System.out.println("BREAD: " + breadChoice + " SIZE: " + sizeChoice + " TOASTED: " + toastedChoice + " PROTEIN: " + proteinChoice + " EXTRA PROTEIN: " + extraProteinChoice + " CHEESE: " + cheeseChoice + " EXTRA CHEESE: " + extraCheeseChoice + " TOPPINGS: " + toppingsChoice + " CONDIMENTS: " + condimentsChoice + ".");
         //idl what to do here, this might be bad tbh
 
-        Sandwich sandwich = new Sandwich(1, breadChoice, false, List.of());
+
 
 
     }

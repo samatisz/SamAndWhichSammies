@@ -1,6 +1,7 @@
 package com.pluralsight.sandwichshop.items;
 import com.pluralsight.sandwichshop.items.toppings.Topping;
 
+import java.util.ArrayList;
 import java.util.List;
 
 //toppings will be listed HERE
@@ -11,11 +12,11 @@ public class Sandwich {
     private boolean isToasted;
     private List<Topping> toppingList;
 
-    public Sandwich(int size, String breadType, boolean isToasted, List<Topping> toppingList) {
+    public Sandwich(int size, String breadType) {
         this.size = size;
         this.breadType = breadType;
-        this.isToasted = isToasted;
-        this.toppingList = toppingList;
+        this.isToasted = false;
+        this.toppingList = new ArrayList<>();
     }
 
     public int getSize() {
