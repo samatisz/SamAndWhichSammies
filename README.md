@@ -34,6 +34,8 @@ Follow these steps to get your application running within IntelliJ IDEA:
 ## Demo
 
 Here are some screenshots showing the main function of the program.
+
+This is my UserInterface class. Most work done for this project was done within the class. All user input is stored here and every interaction made with the user is done with the code here.
 ![image](https://github.com/samatisz/SamAndWhichSammies/assets/166551695/9e484243-f668-4a75-b350-3da208c8b748)
 
 
