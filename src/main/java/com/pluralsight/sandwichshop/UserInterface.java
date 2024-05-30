@@ -160,7 +160,7 @@ public class UserInterface {
     }
 
     public void addDrinkRequest() {
-        System.out.println("Drink options: Grape Faygo, Monkees Banana Nut Rocket Fizz soda, Lemonade, Diet Coke, Coke, Water");
+        System.out.println("Drink options: Grape Faygo, Monkees Banana Nut Rocket Fizz Soda, Lemonade, Diet Coke, Coke, Water");
             System.out.println("Please enter your choice.");
             System.out.print(" > ");
         String flavorChoice = myScanner.nextLine();
@@ -170,7 +170,7 @@ public class UserInterface {
     }
 
     public void addChipsRequest() {
-        System.out.println("Chip options: Lays ruffles, Doritos, Chili Fritos, Funyuns"); //add options
+        System.out.println("Chip options: Lays ruffles, Doritos, Chili Lime Cheetos, Fritos, Funyuns"); //add options
             System.out.println("Please enter your choice.");
             System.out.print(" > ");
         myScanner.nextLine();
@@ -190,6 +190,12 @@ public class UserInterface {
     }
 
     public void cancelOrderRequest() {
+        System.out.println("。。。。。。。。。。。。。。。");
+        System.out.println("Order has been canceled!");
+        System.out.println("Thank you for flying in!");
+        System.out.println("。。。。。。。。。。。。。。。");
+        System.exit(5);
+
 
     }
 

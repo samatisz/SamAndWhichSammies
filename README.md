@@ -48,6 +48,7 @@ Outline potential future enhancements or functionalities you might consider addi
 - I would like to complete this application and make it fully functioning.
 - I want to be able to add multiple toppings and condiments.
 - I want to be able to calculate totals and give each order a receipt.
+- I want a method that saves an order so that it can be checked out in the checkOut() method. 
 - I need to make a mkdir(); method so that I can save each file (.txt) to it and keep everything organized. 
 
 ## Resources
