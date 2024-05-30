@@ -5,7 +5,6 @@ public class Program {
         UserInterface ui = new UserInterface();
         ui.mainMenu();
         ui.createNewOrder();
-        ui.createSandwichMenu();
 
 
     }
