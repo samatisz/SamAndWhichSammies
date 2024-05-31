@@ -37,6 +37,9 @@ Here are some screenshots showing the main function of the program.
 
 This is my UserInterface class. Most work done for this project was done within the class. All user input is stored here and every interaction made with the user is done with the code here.
 ![image](https://github.com/samatisz/SamAndWhichSammies/assets/166551695/9e484243-f668-4a75-b350-3da208c8b748)
+This is the original diagram for my project. 
+![image](https://github.com/samatisz/SamAndWhichSammies/assets/166551695/05205517-3d6b-46c8-a613-68ca93ad7c40)
+
 
 
 
