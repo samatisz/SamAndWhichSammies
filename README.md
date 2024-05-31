@@ -3,7 +3,7 @@
 ## Description of the Project
 
 This application is used for a sandwich shop: Sam And Which Sammies. Orders can be taken and processed online so that customers can order sandwiches, drinks and chips with ease. The application makes it easy for the shop owner to receive orders and this will boost sales as more people are able to put in orders.
-
+The product is unfinished but is still being worked on.
 
 ## User Stories
 
@@ -55,12 +55,13 @@ Outline potential future enhancements or functionalities you might consider addi
 
 List resources such as tutorials, articles, or documentation that helped you during the project.
 
-- I looked at past workshops and tried to learn from those. 
-
+- I looked at past workshops and tried to learn from those.
 
 ## Team Members
 
 - **Shelby Matisz** - Programmer
 
-- **I want to thank Steel Potatoes team for their continued support. Without their support, I would not have made it this far. 
- Thank you **Raymond** for your support and for your help with this project. 
+_I want to thank Steel Potatoes team. Without their support, I would not have made it this far._ 
+ Special thanks to Ben and Husnain for helping me with my code.
+ Thank you **Raymond** for your support and for your help with this project.
+A final thanks to **Alex** for allowing me to vent my frustrations and for really getting me through this. 
