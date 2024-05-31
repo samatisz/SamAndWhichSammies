@@ -2,7 +2,7 @@
 
 ## Description of the Project
 
-This application is used for a sandwich shop. Orders can be taken and processed online. 
+This application is used for a sandwich shop: Sam And Which Sammies. Orders can be taken and processed online so that customers can order sandwiches, drinks and chips with ease. The application makes it easy for the shop owner to receive orders and this will boost sales as more people are able to put in orders.
 
 
 ## User Stories
@@ -23,7 +23,7 @@ Follow these steps to get your application running within IntelliJ IDEA:
 1. Open IntelliJ IDEA.
 2. Select "Open" and navigate to the directory where you cloned or downloaded the project. (File name: FinancialTracker)
 3. After the project opens, wait for IntelliJ to index the files and set up the project.
-4. Find the main method within the `FinancialTracker class` that holds the main method.
+4. Find the main method within the `Program class` that holds the main method.
 5. Click on the green arrow next to the bug logo at the top of the screen to run the program.
 
 ## Technologies Used
@@ -61,3 +61,6 @@ List resources such as tutorials, articles, or documentation that helped you dur
 ## Team Members
 
 - **Shelby Matisz** - Programmer
+
+- **I want to thank Steel Potatoes team for their continued support. Without their support, I would not have made it this far. 
+ Thank you **Raymond** for your support and for your help with this project. 
