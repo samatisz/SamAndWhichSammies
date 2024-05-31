@@ -21,7 +21,7 @@ List the user stories that guided the development of your application.
 Follow these steps to get your application running within IntelliJ IDEA:
 
 1. Open IntelliJ IDEA.
-2. Select "Open" and navigate to the directory where you cloned or downloaded the project. (File name: FinancialTracker)
+2. Select "Open" and navigate to the directory where you cloned or downloaded the project. (File name: SamAndWhichSammies)
 3. After the project opens, wait for IntelliJ to index the files and set up the project.
 4. Find the main method within the `Program class` that holds the main method.
 5. Click on the green arrow next to the bug logo at the top of the screen to run the program.
@@ -62,6 +62,6 @@ List resources such as tutorials, articles, or documentation that helped you dur
 - **Shelby Matisz** - Programmer
 
 _I want to thank Steel Potatoes team. Without their support, I would not have made it this far._ 
- Special thanks to Ben and Husnain for helping me with my code.
- Thank you **Raymond** for your support and for your help with this project.
-A final thanks to **Alex** for allowing me to vent my frustrations and for really getting me through this. 
+- Special thanks to Ben and Husnain for helping me with my code.
+- Thank you **Raymond** for your support and for your help with this project.
+- A final thanks to **Alex** for allowing me to vent my frustrations and for really getting me through this. 
